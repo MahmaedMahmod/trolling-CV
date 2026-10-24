@@ -327,7 +327,7 @@ const caseStudyData = {
   real: {
     title: 'Elnonn in Real Life',
     subtitle: 'CODE: CASE-01-ELNONN-CITY',
-    img: 'assets/me_real.jpg',
+    img: './assets/me_real.jpg',
     tag: 'REALITY AUDIT',
     desc: 'الصورة الحقيقية ليا في الشارع بالليل.. بستايل الشارع الواسع والروقان. بعيداً عن السوشيال ميديا والتصنع، دا شكلي ودا جوي.',
     witness: '"أنا بحب أكون على طبيعتي ومش بحب أتصنع علشان أعجب حد.. اللي يعجبه يعجبه واللي ميعجبوش اااه طب تمام."'
@@ -351,7 +351,7 @@ const caseStudyData = {
   gaming: {
     title: 'الجيمنج وسهرات البي سي',
     subtitle: 'CODE: CASE-04-GAMING-RIG',
-    img: 'assets/ev_pc.jpg',
+    img: './assets/ev_pc.jpg',
     tag: 'GAMING HAVEN',
     desc: 'شاشات وكيبورد ولعب وسهرات مع الديسكورد.. المكان اللي بفرغ فيه عصبيتي وبقضي فيه أحسن أوقات بالليل.',
     witness: '"لو بتلعبي جيمز هنكون أحسن اتنين صحاب ومرتبطين في التاريخ."'
