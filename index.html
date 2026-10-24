@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="kraft">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ELNONN // THE OFFICIAL CLASSIFIED DOSSIER [النون]</title>
+  
+  <!-- Meta tags for social previews -->
+  <meta name="description" content="Elnonn - 20 yo Programmer from El Marg City. A bold brutalist creative agency portfolio and personal classified dossier.">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Canvas Confetti CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+  <!-- ==================== 1. DOSSIER HUD / TOP BAR ==================== -->
+  <header class="dossier-hud">
+    <div class="hud-inner">
+      <div class="hud-left">
+        <span class="file-pill">FILE NO. 2025-ELNONN</span>
+        <div class="status-badge">
+          <span class="status-indicator"></span>
+          <span>STATUS: SINGLE (FOR NOW... بس مش مطول)</span>
+        </div>
+      </div>
+
+      <nav class="hud-nav" aria-label="Quick Nav">
+        <a href="#hero">THE SUBJECT</a>
+        <a href="#stats">STATS & METRICS</a>
+        <a href="#flags">RED & GREEN FLAGS</a>
+        <a href="#cases">EVIDENCE</a>
+        <a href="#protocol">TERMS & SLA</a>
+        <a href="#proposal">APPLY NOW</a>
+      </nav>
+
+      <div class="hud-right">
+        <span class="cairo-clock" id="cairoClock">CAIRO: 00:00:00</span>
+        <button class="sound-toggle" id="soundToggleBtn" title="Toggle Sound FX">🔊 SOUND ON</button>
+        <button class="brutalist-btn" id="themeToggleBtn" style="padding: 0.35rem 0.65rem; font-size: 0.75rem;">📁 KRAFT DOSSIER</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== 2. MARQUEE BANNER ==================== -->
+  <div class="marquee-container">
+    <div class="marquee-content">
+      ⚠️ TOP SECRET: HANDLE WITH CARE... OR DON'T • ELNONN // النون • 20 YO • EL MARG CITY • PROGRAMMER • أهلاوي صميم 🦅 • شاي وشيشة قص وسجاير 🚬 • النووووم سلطان • اااه طب تمام.. الووو؟ • NO CATS ALLOWED 🚫 • ⚠️ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ⚠️ TOP SECRET: HANDLE WITH CARE... OR DON'T • ELNONN // النون • 20 YO • EL MARG CITY • PROGRAMMER • أهلاوي صميم 🦅 • شاي وشيشة قص وسجاير 🚬 • النووووم سلطان • اااه طب تمام.. الووو؟ • NO CATS ALLOWED 🚫 • ⚠️
+    </div>
+  </div>
+
+  <main class="container">
+
+    <!-- ==================== 3. DANGER ALERT BANNER ==================== -->
+    <div class="danger-banner">
+      <div class="danger-title">
+        <span style="font-size: 1.5rem;">🚨</span>
+        <span>DANGER // تحذير أمني مباشر:</span>
+      </div>
+      <div class="danger-text ar">
+        ممكن أتحب بسهولة جداً.. بس بنام كتير وبختفي فجأة لما بتضغط!
+      </div>
+      <div class="stamp stamp-danger" style="background:#FFF;">HAZARD LEVEL 95%</div>
+    </div>
+
+    <!-- ==================== 4. HERO PROFILE DOSSIER (FIRST-PERSON BILINGUAL) ==================== -->
+    <section class="hero-dossier" id="hero">
+      
+      <!-- Left Hero: Polaroid Card -->
+      <div class="polaroid-card" id="heroPolaroid">
+        <div class="tape"></div>
+        <div class="polaroid-img-wrap">
+          <img src="assets/me_real.jpg" alt="Elnonn" class="polaroid-img" style="object-position: center 15%;">
+        </div>
+        <div class="polaroid-caption">
+          This is me... النون
+        </div>
+        <div class="polaroid-subcaption ar handwriting">
+          (من قلب المرج سيتي.. حقيقي ومش بتصنع)
+        </div>
+        <div style="margin-top: 0.75rem;">
+          <span class="stamp stamp-classified">100% REAL & VERIFIED</span>
+        </div>
+      </div>
+
+      <!-- Center Hero: Main Dossier Card -->
+      <div class="main-file-card">
+        <div class="classified-header">
+          <div>
+            <div style="display: flex; gap: 0.5rem; align-items: center; margin-bottom: 0.35rem;">
+              <span class="stamp stamp-danger">TOP SECRET</span>
+              <span class="font-mono" style="font-size: 0.8rem; font-weight: 800;">OFFICIAL SUBJECT DOSSIER</span>
+            </div>
+            <h1 class="hero-name">ELNONN // النون</h1>
+            <p class="hero-subtitle">The Programmer / The Gamer / Ahwa Master / The Overthinker</p>
+          </div>
+          <div style="text-align: right;">
+            <div class="stamp" style="font-size: 0.9rem; padding: 0.35rem 0.65rem;">REF: ELNONN-EG</div>
+          </div>
+        </div>
+
+        <!-- Metadata Grid (Bilingual First Person) -->
+        <div class="dossier-meta-grid">
+          <div class="meta-item">
+            <span class="meta-label">👤 Subject Age</span>
+            <span class="meta-val">20 (still a kid... kinda)</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">📍 Base Location</span>
+            <span class="meta-val">El Marg City, Cairo 🇪🇬 <span class="ar" style="font-size: 0.85rem; color:#666;">(المرج سيتي)</span></span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">💼 Occupation</span>
+            <span class="meta-val">Programmer & Developer 💻</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">🦅 Football Passion</span>
+            <span class="meta-val" style="color: #DC2626; font-weight: 900;">Al Ahly SC (أهلاوي صميم وماتشاته مقدسة) 🦅</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">☕ Daily Sanctuary</span>
+            <span class="meta-val">El Ahwa (شاي وشيشة قص وسجاير 🚬)</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">💔 Marital Status</span>
+            <span class="meta-val" style="color: var(--color-danger);">Single (but not for long... maybe)</span>
+          </div>
+        </div>
+
+        <!-- Hand Quote Banner -->
+        <div class="quote-banner">
+          <div class="quote-text">
+            “اااه طب تمام.. الووو؟” 👑
+          </div>
+          <p class="ar handwriting" style="margin-top: 0.25rem; font-size: 1.15rem; color: #444;">
+            شعار حياتي اللي بسلك بيه أموري لما الدنيا تكركب أو حد يسأل أسئلة ملهاش لازمة
+          </p>
+        </div>
+
+        <div style="display: flex; gap: 0.75rem; margin-top: 1.5rem; flex-wrap: wrap;">
+          <a href="#proposal" class="brutalist-btn brutalist-btn-primary">
+            <span>📝 APPLY TO ENTER MY LIFE (قدمي بروبوزال)</span>
+            <span>→</span>
+          </a>
+          <a href="#flags" class="brutalist-btn">
+            <span>⚠️ INSPECT MY RED FLAGS</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Hero: The Ahwa & Sleep Protocol Card -->
+      <div class="cat-dossier-card" id="ahwaCard" style="cursor: pointer;">
+        <div class="tape-corner-right"></div>
+        <div style="background: var(--bg-surface); border: 2px solid #000; padding: 1.5rem 1rem; text-align: center; margin-bottom: 0.75rem;">
+          <div style="font-size: 3rem; margin-bottom: 0.25rem;">🦅☕💨🚬</div>
+          <div style="font-weight: 900; font-size: 1.15rem; text-transform: uppercase;">
+            THE ELNONN PROTOCOL
+          </div>
+          <div class="ar font-mono" style="font-size: 0.8rem; color: var(--stamp-red); font-weight: 800; margin-top: 0.35rem;">
+            (أهلي • شاي • شيشة قص • سجاير • نوووم)
+          </div>
+        </div>
+
+        <div class="cat-caption" style="font-size: 0.95rem;">
+          "Al Ahly SC is in my blood 🦅.. Tea, shisha qass, cigarettes, and deep sleep."
+        </div>
+
+        <div class="cat-mood-box">
+          <div style="font-weight: 800; font-size: 0.75rem; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.2rem;">
+            ⚡ LIVE MOOD SENSOR:
+          </div>
+          <div id="elnonnMoodText" style="font-weight: 700; color: #111;">
+            مستني ماتش الأهلي مع الشاي وحجر الشيشة القص 🦅💨
+          </div>
+          <div style="font-size: 0.7rem; color: #666; margin-top: 0.35rem; font-style: italic;">
+            (Click to ping my status ☕)
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ==================== 5. PERFORMANCE METRICS & BENCHMARKS ==================== -->
+    <div class="section-header" id="stats">
+      <div class="section-title">
+        <span class="section-index">01</span>
+        <span>PERSONALITY STATS & REAL-LIFE BENCHMARKS</span>
+      </div>
+      <div class="font-mono" style="font-size: 0.85rem; font-weight: 700;">
+        VERIFIED SYSTEM AUDIT v2025
+      </div>
+    </div>
+
+    <div class="stats-grid">
+      
+      <!-- Personality Stats Card -->
+      <div class="brutalist-box" style="padding: 1.5rem;">
+        <h3 style="font-size: 1.25rem; font-weight: 900; margin-bottom: 1.25rem; text-transform: uppercase;">
+          🧠 Personality Traits (طبيعتي الحقيقية)
+        </h3>
+        
+        <div class="stat-bar-group">
+          <div class="stat-item">
+            <div class="stat-info">
+              <span>Overthinker (بسحل نفسي في التفكير)</span>
+              <span style="color: var(--color-danger);">95%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill fill-orange" style="width: 95%;"></div>
+            </div>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-info">
+              <span>Stubborn (عنيد ودماغي ناشفة)</span>
+              <span style="color: var(--color-danger);">90%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill fill-pink" style="width: 90%;"></div>
+            </div>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-info">
+              <span>Hot-Headed / عصبي (لما حد يستفزني)</span>
+              <span>75%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill fill-brown" style="width: 75%;"></div>
+            </div>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-info">
+              <span>Honest (صريح ومش بتاع لف ودوران)</span>
+              <span style="color: var(--color-green);">90%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill fill-teal" style="width: 90%;"></div>
+            </div>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-info">
+              <span>Funny & Sarcastic (دمي خفيف بهزاري)</span>
+              <span>85%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill fill-yellow" style="width: 85%;"></div>
+            </div>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-info">
+              <span>Romantic (Secretly) / حنين في سري</span>
+              <span style="color: var(--color-purple);">100%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill fill-purple" style="width: 100%;"></div>
+            </div>
+          </div>
+
+          <div style="margin-top: 0.5rem; text-align: center;">
+            <button class="brutalist-btn" id="secretRomanticTrigger" style="font-size: 0.75rem; padding: 0.4rem 0.8rem; width: 100%;">
+              🔒 CLICK TO REVEAL SECRET NOTE (نوتة سرية)
+            </button>
+            <div id="secretRomanticNote" class="ar handwriting" style="display: none; margin-top: 0.6rem; padding: 0.6rem; background: var(--color-yellow-bg); border: 2px dashed #000; font-size: 1.1rem; color: #111;">
+              "ممكن أبان عصبي ودماغي ناشفة وبختفي وبنام كتير.. بس لما بهتم بحد بجد بكون ضهره وسنده وبشجعه في كل أحلامه 🤍"
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interests & Real Hobbies -->
+      <div class="brutalist-box" style="padding: 1.5rem;">
+        <h3 style="font-size: 1.25rem; font-weight: 900; margin-bottom: 1.25rem; text-transform: uppercase;">
+          🎯 My Real Interests (اهتماماتي)
+        </h3>
+
+        <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+          <div class="meta-item">
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+              <span style="font-weight: 800;">💻 Programming</span>
+              <span class="font-mono" style="font-size: 0.75rem; color: var(--text-muted);">(my passion & work)</span>
+            </div>
+          </div>
+
+          <div class="meta-item" style="background: var(--color-yellow-bg);">
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+              <span style="font-weight: 800;">☕ El Ahwa (شاي وشيشة قص)</span>
+              <span class="font-mono" style="font-size: 0.75rem; font-weight: 800;">(sacred ritual 💨)</span>
+            </div>
+          </div>
+
+          <div class="meta-item" style="border-color: #DC2626; background: #FEF2F2;">
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+              <span style="font-weight: 800; color: #DC2626;">🦅 Al Ahly SC (نادي القرن)</span>
+              <span class="font-mono" style="font-size: 0.75rem; font-weight: 800; color: #DC2626;">(ماتشاته خط أحمر 🔴)</span>
+            </div>
+          </div>
+
+          <div class="meta-item">
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+              <span style="font-weight: 800;">🚬 Smoking (سجاير)</span>
+              <span class="font-mono" style="font-size: 0.75rem; color: var(--text-muted);">(هتتعودي عليها عادي)</span>
+            </div>
+          </div>
+
+          <div class="meta-item">
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+              <span style="font-weight: 800;">🎮 Gaming & Discord</span>
+              <span class="font-mono" style="font-size: 0.75rem; color: var(--text-muted);">(stress relief)</span>
+            </div>
+          </div>
+
+          <div class="meta-item">
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+              <span style="font-weight: 800;">🍿 Movies & Series</span>
+              <span class="font-mono" style="font-size: 0.75rem; color: var(--text-muted);">(binge mode at 2 AM)</span>
+            </div>
+          </div>
+
+          <div class="meta-item">
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+              <span style="font-weight: 800;">😴 SLEEP (النووووم)</span>
+              <span class="font-mono" style="font-size: 0.75rem; color: var(--color-danger);">(the real coma)</span>
+            </div>
+          </div>
+
+          <div class="meta-item">
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+              <span style="font-weight: 800;">🚫 Cats (القطط)</span>
+              <span class="font-mono" style="font-size: 0.75rem; color: #DC2626; font-weight: 900;">(STRICTLY FORBIDDEN)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Real Life Latency & Stack -->
+      <div class="brutalist-box" style="padding: 1.5rem;">
+        <h3 style="font-size: 1.25rem; font-weight: 900; margin-bottom: 1rem; text-transform: uppercase;">
+          ⏱️ Real Life Latency (وقتي الحقيقي)
+        </h3>
+
+        <!-- Real Life Stats -->
+        <div style="display: flex; flex-direction: column; gap: 0.55rem;">
+          <div class="stat-item">
+            <div class="stat-info"><span>Sleep (النووووم) 😴</span><span>95%</span></div>
+            <div class="progress-track"><div class="progress-fill fill-blue" style="width: 95%;"></div></div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-info"><span>El Ahwa & Shisha Qass (شاي وشيشة قص) ☕💨</span><span>85%</span></div>
+            <div class="progress-track"><div class="progress-fill fill-yellow" style="width: 85%;"></div></div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-info"><span>Gaming (الجيمنج) 🎮</span><span>80%</span></div>
+            <div class="progress-track"><div class="progress-fill fill-teal" style="width: 80%;"></div></div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-info"><span>Coding & Projects 💻</span><span>75%</span></div>
+            <div class="progress-track"><div class="progress-fill fill-orange" style="width: 75%;"></div></div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-info"><span>Movies & Series 🎬</span><span>70%</span></div>
+            <div class="progress-track"><div class="progress-fill fill-purple" style="width: 70%;"></div></div>
+          </div>
+        </div>
+
+        <!-- Tech Stack Tags -->
+        <div style="margin-top: 1.25rem;">
+          <div style="font-size: 0.8rem; font-family: var(--font-mono); font-weight: 800; text-transform: uppercase; margin-bottom: 0.35rem;">
+            💻 Programmer Stack & Essentials:
+          </div>
+          <div class="badge-tag-grid">
+            <span class="badge-tag">💻 Code & Logic</span>
+            <span class="badge-tag">☕ Tea with Mint</span>
+            <span class="badge-tag">🎮 Discord & Steam</span>
+            <span class="badge-tag">😴 DND Mode</span>
+          </div>
+        </div>
+
+        <!-- Love Buffering box -->
+        <div class="buffering-box" id="loveBufferingBox" title="Click to refresh connection" style="margin-top: 1rem;">
+          <div style="display: flex; align-items: center; gap: 0.6rem;">
+            <div class="spinner"></div>
+            <div>
+              <div style="font-family: var(--font-mono); font-size: 0.8rem; font-weight: 800;">
+                LOVE STATUS: <span id="lovePercent">1% (Still buffering...)</span>
+              </div>
+              <div id="loveStatusMsg" style="font-size: 0.72rem; color: #555;">
+                Click to ping the server...
+              </div>
+            </div>
+          </div>
+          <span class="stamp" style="font-size: 0.65rem;">RETRY</span>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ==================== 6. GREEN FLAGS VS RED FLAGS & COMPATIBILITY AUDIT ==================== -->
+    <div class="section-header" id="flags">
+      <div class="section-title">
+        <span class="section-index">02</span>
+        <span>SAFETY & HAZARD AUDIT (GREEN VS RED FLAGS)</span>
+      </div>
+      <div class="font-mono" style="font-size: 0.85rem; font-weight: 700;">
+        NO FAKE CLAIMS • 100% TRANSPARENT
+      </div>
+    </div>
+
+    <div class="flags-grid">
+      
+      <!-- Green Flags -->
+      <div class="flag-card green-flag-card">
+        <div class="pushpin"></div>
+        <div class="flag-header">
+          <div class="flag-badge badge-green">GREEN FLAGS (مميزاتي)</div>
+          <div style="font-size: 1.4rem;">💚</div>
+        </div>
+        <ul class="flag-list">
+          <li>
+            <span class="flag-icon">✔️</span>
+            <span><strong>Honest (most of the time):</strong> صريح معاكي في وشك وبكره اللف والدوران.</span>
+          </li>
+          <li>
+            <span class="flag-icon">✔️</span>
+            <span><strong>Cares about people:</strong> بهتم بجد باللي معايا ومن قلبي.</span>
+          </li>
+          <li>
+            <span class="flag-icon">✔️</span>
+            <span><strong>Good listener (مش ع طول):</strong> بس لما أركز معاكي هسمعك وأفهم كل تفصيلة.</span>
+          </li>
+          <li>
+            <span class="flag-icon">✔️</span>
+            <span><strong>Supports your dreams:</strong> هكون أول واحد في ضهرك ومشجع لطموحك.</span>
+          </li>
+          <li>
+            <span class="flag-icon">✔️</span>
+            <span><strong>Ibn Balad (جدع وابن بلد):</strong> من المرج ورجل مواقف.</span>
+          </li>
+        </ul>
+        <div class="handwriting ar" style="margin-top: 1.25rem; font-size: 1.25rem; color: #065F46;">
+          (لو لقيت منك صدق.. هتشوفي مني أحسن معاملة في الدنيا)
+        </div>
+      </div>
+
+      <!-- Red Flags -->
+      <div class="flag-card red-flag-card">
+        <div class="pushpin"></div>
+        <div class="flag-header">
+          <div class="flag-badge badge-red">RED FLAGS (عيوبي بصراحة)</div>
+          <div style="font-size: 1.4rem;">🚩</div>
+        </div>
+        <ul class="flag-list">
+          <li>
+            <span class="flag-icon">❌</span>
+            <span><strong>Smoking (بشرب سجاير):</strong> بشرب سجاير، بس ممكن تتعودي على ريحتها عادي متقلقيش 🚬.</span>
+          </li>
+          <li>
+            <span class="flag-icon">❌</span>
+            <span><strong>Al Ahly Obsession:</strong> أهلاوي متعصب جداً.. وقت الماتش ممنوع الرغي، ولو خسر اليوم بيتقفل 🦅.</span>
+          </li>
+          <li>
+            <span class="flag-icon">❌</span>
+            <span><strong>Overthinks everything:</strong> بسحل نفسي في التفكير لحد الصداع.</span>
+          </li>
+          <li>
+            <span class="flag-icon">❌</span>
+            <span><strong>Stubborn (a lot):</strong> عنيد جداً ودماغي ناشفة في قراراتي.</span>
+          </li>
+          <li>
+            <span class="flag-icon">❌</span>
+            <span><strong>Gets jealous (sorry يعني):</strong> بغير ودمي حامي على اللي يخصني.</span>
+          </li>
+          <li>
+            <span class="flag-icon">❌</span>
+            <span><strong>Disappears when stressed:</strong> لما بتضغط بختفي شوية ومبردش على حد.</span>
+          </li>
+          <li>
+            <span class="flag-icon">❌</span>
+            <span><strong>Sleep Coma (بناممم كتيررر):</strong> غيبوبة نوم 14 ساعة ومش بترد.</span>
+          </li>
+          <li>
+            <span class="flag-icon">❌</span>
+            <span><strong>Hot-Headed / عصبي:</strong> بتنرفز بسرعة لو حد استفزني أو عاند.</span>
+          </li>
+        </ul>
+        <div class="handwriting ar" style="margin-top: 1.25rem; font-size: 1.25rem; color: #991B1B;">
+          (بقولك عيوبي أهو من الأول علشان ما تجيش تتفاجئي بعدين!)
+        </div>
+      </div>
+
+      <!-- Interactive Compatibility Tester -->
+      <div class="compatibility-tester">
+        <div class="tester-header">
+          <div>
+            <h3 style="font-size: 1.4rem; font-weight: 900; text-transform: uppercase;">
+              🧪 THE "CAN YOU HANDLE ELNONN?" COMPATIBILITY CALCULATOR
+            </h3>
+            <p style="font-size: 0.95rem; color: var(--text-muted); margin-top: 0.2rem;">
+              علمي على العادات اللي تقدري تتعايشي معاها في شخصيتي وشوفي النسبة:
+            </p>
+          </div>
+          <span class="stamp stamp-danger">ELNONN AUDIT v2.0</span>
+        </div>
+
+        <div class="checklist-grid">
+          <label class="custom-checkbox">
+            <input type="checkbox" class="compat-check" value="1">
+            <span>عادي لو دخلت في غيبوبة نوم 12 ساعة ومردتش</span>
+          </label>
+          <label class="custom-checkbox">
+            <input type="checkbox" class="compat-check" value="1">
+            <span>مستعدة تستحملي لما أقول "اااه طب تمام" أو "الووو؟"</span>
+          </label>
+          <label class="custom-checkbox">
+            <input type="checkbox" class="compat-check" value="1">
+            <span>عادي إني بشرب سجاير وهتتعودي عليها بدون زن 🚬</span>
+          </label>
+          <label class="custom-checkbox">
+            <input type="checkbox" class="compat-check" value="1">
+            <span>أهلاوية صميمة أو على الأقل مش بتغيظيني وقت الماتش 🦅</span>
+          </label>
+          <label class="custom-checkbox">
+            <input type="checkbox" class="compat-check" value="1">
+            <span>عادي أسيبك وأنزل أقعد ع القهوة أشرب شاي وأولع شيشة قص</span>
+          </label>
+          <label class="custom-checkbox">
+            <input type="checkbox" class="compat-check" value="1">
+            <span>بتعرفي ترصيلي حجر شيشة قص مظبوط وترقصيلي وتروقي عليا 💃💨</span>
+          </label>
+          <label class="custom-checkbox">
+            <input type="checkbox" class="compat-check" value="1">
+            <span>مش بتحبي القطط ومعندكيش قطة في البيت نهائي! 🚫</span>
+          </label>
+          <label class="custom-checkbox">
+            <input type="checkbox" class="compat-check" value="1">
+            <span>مبتعانديش لما أتعصب وبتعرفي تروقيني بهدوء</span>
+          </label>
+        </div>
+
+        <div class="score-display">
+          <div>
+            <div style="font-family: var(--font-mono); font-size: 0.85rem; font-weight: 800; color: #BBB;">
+              YOUR COMPATIBILITY INDEX (نسبة التوافق):
+            </div>
+            <div id="compatVerdict" class="ar" style="font-size: 1.15rem; font-weight: 800; margin-top: 0.35rem;">
+              لسه ما اخترتيش أي حاجة.. جربي شوفي هتعرفي تسلكي ولا هتهربي من أول أسبوع 😂
+            </div>
+          </div>
+          <div id="compatScoreNum" class="score-num">0%</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ==================== 7. AGENCY CASE STUDIES (EVIDENCE & INCIDENT REPORTS) ==================== -->
+    <div class="section-header" id="cases">
+      <div class="section-title">
+        <span class="section-index">03</span>
+        <span>EVIDENCE & INCIDENT CASE STUDIES (أدلة من حياتي)</span>
+      </div>
+      <div class="font-mono" style="font-size: 0.85rem; font-weight: 700;">
+        CLICK ANY FILE TO VIEW CLASSIFIED REPORT
+      </div>
+    </div>
+
+    <div class="cases-grid">
+      
+      <!-- Case 01 -->
+      <div class="case-card" data-case="real">
+        <div class="case-img-box">
+          <span class="case-header-tag">CASE #01</span>
+          <img src="assets/me_real.jpg" alt="Elnonn in the city" style="object-position: center 20%;">
+        </div>
+        <div>
+          <h4 class="case-title">Me in Real Life (Elnonn in the city)</h4>
+          <p class="case-caption ar">صورة واقعية ليا في الشارع.. ستايل ستريت ورايق بدون تصنع.</p>
+        </div>
+        <div class="case-meta">
+          <span>EVENT: REAL PHOTO</span>
+          <span style="color: var(--color-danger);">INSPECT →</span>
+        </div>
+      </div>
+
+      <!-- Case 02 -->
+      <div class="case-card" data-case="sleep">
+        <div class="case-img-box">
+          <span class="case-header-tag">CASE #02</span>
+          <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: #18191E; font-size: 3.5rem;">
+            😴🛌
+          </div>
+        </div>
+        <div>
+          <h4 class="case-title">The Sleep Coma (غيبوبة النوم)</h4>
+          <p class="case-caption ar">القدرة الخارقة إني أنام لساعات طويلة جداً والموبايل سايلنت.</p>
+        </div>
+        <div class="case-meta">
+          <span>ZONE: DEEP COMA</span>
+          <span style="color: var(--color-danger);">INSPECT →</span>
+        </div>
+      </div>
+
+      <!-- Case 03 -->
+      <div class="case-card" data-case="ahwa">
+        <div class="case-img-box">
+          <span class="case-header-tag">CASE #03</span>
+          <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: #1C1917; font-size: 3.5rem;">
+            ☕💨
+          </div>
+        </div>
+        <div>
+          <h4 class="case-title">El Ahwa Protocol (الشاي والشيشة القص)</h4>
+          <p class="case-caption ar">طقس القهوة مع الشاي وحجر الشيشة القص.. الترويق بعد سحلة الكود.</p>
+        </div>
+        <div class="case-meta">
+          <span>SANCTUARY: AHWA & SHISHA</span>
+          <span style="color: var(--color-danger);">INSPECT →</span>
+        </div>
+      </div>
+
+      <!-- Case 04 -->
+      <div class="case-card" data-case="gaming">
+        <div class="case-img-box">
+          <span class="case-header-tag">CASE #04</span>
+          <img src="assets/ev_pc.jpg" alt="Gaming & Setup">
+        </div>
+        <div>
+          <h4 class="case-title">The Gaming Rig (PC > drama)</h4>
+          <p class="case-caption ar">الشاشات والكيبورد واللعب.. وقت بفصل فيه تماماً عن الكوكب.</p>
+        </div>
+        <div class="case-meta">
+          <span>ZONE: GAMING RIG</span>
+          <span style="color: var(--color-danger);">INSPECT →</span>
+        </div>
+      </div>
+
+      <!-- Case 05 -->
+      <div class="case-card" data-case="catchphrase">
+        <div class="case-img-box">
+          <span class="case-header-tag">CASE #05</span>
+          <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: var(--color-yellow-bg); color: #000; font-family: var(--font-hand); font-size: 2rem; font-weight: 900; text-align: center; padding: 1rem;">
+            "اااه طب تمام.. الووو؟"
+          </div>
+        </div>
+        <div>
+          <h4 class="case-title">Signature Catchphrase</h4>
+          <p class="case-caption ar">الحل السحري لأي نقاش عقيم، وأكتر كلمة بقولها لتفادي وجع الدماغ.</p>
+        </div>
+        <div class="case-meta">
+          <span>PHRASE: CLASSIC</span>
+          <span style="color: var(--color-danger);">INSPECT →</span>
+        </div>
+      </div>
+
+      <!-- Case 06 -->
+      <div class="case-card" data-case="binge">
+        <div class="case-img-box">
+          <span class="case-header-tag">CASE #06</span>
+          <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: #0F172A; font-size: 3.5rem;">
+            🎬🍿
+          </div>
+        </div>
+        <div>
+          <h4 class="case-title">Late Night Cinema (سحلة أفلام)</h4>
+          <p class="case-caption ar">سحلة مسلسلات ممكن تخليني أخلص سيزون كامل في ليلة واحدة.</p>
+        </div>
+        <div class="case-meta">
+          <span>HABIT: BINGE WATCHING</span>
+          <span style="color: var(--color-danger);">INSPECT →</span>
+        </div>
+      </div>
+
+      <!-- Case 07 -->
+      <div class="case-card" data-case="ahly" style="border-color: #DC2626;">
+        <div class="case-img-box" style="background: #991B1B;">
+          <span class="case-header-tag" style="background: #DC2626; color: #FFF;">CASE #07</span>
+          <div style="width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #FFF; font-weight: 900;">
+            <div style="font-size: 3rem;">🦅🔴</div>
+            <div style="font-family: var(--font-display); font-size: 1.1rem; letter-spacing: 1px;">AL AHLY SC</div>
+          </div>
+        </div>
+        <div>
+          <h4 class="case-title" style="color: #DC2626;">Al Ahly SC (الأهلي فوق الجميع)</h4>
+          <p class="case-caption ar">نادي القرن وعشقي الأول.. وقت الماتش طوارئ، والبطولات عادة مش إنجاز!</p>
+        </div>
+        <div class="case-meta">
+          <span style="color: #DC2626;">PASSION: 100% RED EAGLE</span>
+          <span style="color: var(--color-danger);">INSPECT →</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ==================== 8. THE CHAOS SYNDICATE (MY SUPPORT SQUAD) ==================== -->
+    <div class="section-header">
+      <div class="section-title">
+        <span class="section-index">04</span>
+        <span>THE TEAM BEHIND THE CHAOS (MY SQUAD)</span>
+      </div>
+      <div class="font-mono" style="font-size: 0.85rem; font-weight: 700;">
+        ORGANIZATIONAL HIERARCHY
+      </div>
+    </div>
+
+    <div class="team-grid">
+      
+      <div class="team-card">
+        <div class="team-avatar">
+          <img src="assets/me_real.jpg" alt="Elnonn" style="object-position: center 20%;">
+        </div>
+        <h4 class="team-name">Elnonn (أنا)</h4>
+        <div class="team-role">Founder & Code Producer</div>
+        <p class="team-bio ar">مبرمج من المرج، بسحل في كود وجيمنج، وبحب القهوة والنوم والروقان.</p>
+      </div>
+
+      <div class="team-card">
+        <div class="team-avatar" style="background:#FFF;">
+          ☕💨
+        </div>
+        <h4 class="team-name">Tea & Shisha Qass (الشيشة القص)</h4>
+        <div class="team-role">Chief Fuel Officer</div>
+        <p class="team-bio ar">الوقود الرسمي لكل دقيقة صحيان وكل حجر شيشة قص متولع ع الفحم في القهوة.</p>
+      </div>
+
+      <div class="team-card">
+        <div class="team-avatar" style="background:#FFF;">
+          😴
+        </div>
+        <h4 class="team-name">The Pillow & Bed</h4>
+        <div class="team-role">VP of Deep Coma</div>
+        <p class="team-bio ar">المسؤول عن اختفائي المفاجئ لمدة 12 ساعة بدون أي تفسير منطقي.</p>
+      </div>
+
+      <div class="team-card">
+        <div class="team-avatar" style="background:#FFF;">
+          🌪️
+        </div>
+        <h4 class="team-name">Stubbornness & Overthinking</h4>
+        <div class="team-role">Director of Crises</div>
+        <p class="team-bio ar">القسم المسؤول عن التفكير الزيادة ونشفان الدماغ والعصبية المفاجئة.</p>
+      </div>
+
+    </div>
+
+    <!-- ==================== 9. DAILY TIMELINE & TERMS & CONDITIONS ==================== -->
+    <div class="section-header" id="protocol">
+      <div class="section-title">
+        <span class="section-index">05</span>
+        <span>DAILY ROUTINE & TERMS OF ENGAGEMENT (SLA)</span>
+      </div>
+      <div class="font-mono" style="font-size: 0.85rem; font-weight: 700;">
+        HOW TO DEAL WITH ME
+      </div>
+    </div>
+
+    <div class="protocol-grid">
+      
+      <!-- Timeline -->
+      <div class="timeline-card">
+        <h3 style="font-size: 1.3rem; font-weight: 900; text-transform: uppercase;">
+          ☀️ My Daily Life Routine (روتيني اليومي)
+        </h3>
+        <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 0.2rem;">
+          الجدول الزمني الطبيعي ليومي:
+        </p>
+
+        <div class="timeline-list">
+          <div class="timeline-item">
+            <span class="timeline-time">LATE</span>
+            <span class="timeline-desc">Wake up (محدش يكلمني أول نص ساعة) 🥱</span>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-time">MANDATORY</span>
+            <span class="timeline-desc">Tea & Shisha Qass (شاي وحجر شيشة قص ع القهوة) ☕💨</span>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-time">FOCUS</span>
+            <span class="timeline-desc">Coding & Project architecture (سحلة كود) 💻</span>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-time">SANCTUARY</span>
+            <span class="timeline-desc">El Ahwa with friends (قعدة روقان ع القهوة) 🌿</span>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-time">NIGHT</span>
+            <span class="timeline-desc">Gaming & Movies until dawn (سهرة جيمنج وفيلم) 🎮</span>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-time">COMA</span>
+            <span class="timeline-desc">Night overthinking... then deep sleep 😴</span>
+          </div>
+        </div>
+
+        <div class="handwriting ar" style="text-align: center; margin-top: 1.25rem; font-size: 1.3rem; color: #16A34A;">
+          كل حاجة بالهداوة وبتمشي زي الفل 🙂
+        </div>
+      </div>
+
+      <!-- Terms & Conditions (Chalkboard) -->
+      <div class="terms-card">
+        <div class="terms-header">
+          <div style="font-family: var(--font-mono); font-size: 0.85rem; font-weight: 800; color: #EBCB8B;">
+            LEGAL DISCLAIMER & TERMS (الشروط والأحكام)
+          </div>
+          <span class="stamp stamp-danger" style="color: #FFF; border-color: #FFF;">READ CAREFULLY</span>
+        </div>
+
+        <h3 class="ar" style="font-size: 1.6rem; font-weight: 900; margin-bottom: 1.25rem; color: #ECEFF4;">
+          شروطي وطريقة التعامل معايا (How to deal with me):
+        </h3>
+
+        <ul class="terms-list">
+          <li>
+            <span class="terms-num">1</span>
+            <span><strong>Be patient:</strong> بلاش دراما وأسئلة عميقة أول ما أصحى من النوم.. استني أجمع الأول.</span>
+          </li>
+          <li>
+            <span class="terms-num">2</span>
+            <span><strong>Give me space:</strong> لو اتضغطت واختفيت شوية متعمليش حوار، دا طبعي لما بضايق، شوية وبرجع رايق.</span>
+          </li>
+          <li>
+            <span class="terms-num">3</span>
+            <span><strong>Smoking Habit:</strong> بشرب سجاير، فمتجيش كل دقيقتين تقوليلي بطلها، هتتعودي عليها عادي 🚬.</span>
+          </li>
+          <li>
+            <span class="terms-num">4</span>
+            <span><strong>Al Ahly Match Protocol:</strong> وقت ماتش الأهلي ده طوارئ وطقس مقدس.. تشجعي معايا يا تسكتي لحد ما نكسب 🦅.</span>
+          </li>
+          <li>
+            <span class="terms-num">5</span>
+            <span><strong>Don't be stubborn:</strong> متعنديش قصادي عشان أنا عنيد جداً.. العناد قصادي خسران.</span>
+          </li>
+          <li>
+            <span class="terms-num">6</span>
+            <span><strong>Accept my jealousy:</strong> تقبلي غيرتي عليكي لأني بغير بجد ودمي حامي، ودا بدافع إني بهتم.</span>
+          </li>
+          <li>
+            <span class="terms-num">7</span>
+            <span><strong>Strictly NO CATS:</strong> مفيش قطط في حياتنا نهائي! مش بحبهم ومش بطيقهم تماماً 🚫.</span>
+          </li>
+          <li>
+            <span class="terms-num">8</span>
+            <span><strong>Shisha & Dancing Protocol:</strong> اللي هتكون معايا لازم تكون بتعرف ترصلي حجر شيشة قص مظبوط وترقصلي وتروق عليا 💃💨.</span>
+          </li>
+          <li>
+            <span class="terms-num">9</span>
+            <span><strong>Loyalty = 1000% Support:</strong> لو صادقة معايا وفي ضهري = هحطك فوق راسي وهشجعك في كل خطوة 🤍.</span>
+          </li>
+        </ul>
+
+        <div class="secret-reader-box">
+          ❤️ IF YOU'RE STILL READING... YOU'RE ALREADY SPECIAL!
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ==================== 10. CLIENT PROPOSAL / DATE APPLICATION FORM ==================== -->
+    <div class="section-header" id="proposal">
+      <div class="section-title">
+        <span class="section-index">06</span>
+        <span>START A COLLABORATION / APPLY TO ENTER MY LIFE</span>
+      </div>
+      <div class="font-mono" style="font-size: 0.85rem; font-weight: 700;">
+        OFFICIAL TENDER TO ELNONN
+      </div>
+    </div>
+
+    <div class="proposal-section">
+      <div class="tape"></div>
+      
+      <div style="text-align: center; max-width: 650px; margin: 0 auto;">
+        <span class="stamp stamp-danger" style="margin-bottom: 0.5rem;">POSITION VACANT</span>
+        <h2 style="font-size: 2.2rem; font-weight: 900; text-transform: uppercase;">
+          Client & Date Proposal Form
+        </h2>
+        <p class="ar" style="font-size: 1.15rem; color: var(--text-muted); margin-top: 0.5rem;">
+          عجبك كلامي وحاسة إنك ممكن تسلكي مع طبعي ونومي وعنادي؟ املأي الفورم وابعتيلي فوراً على الواتساب! 😉
+        </p>
+      </div>
+
+      <form id="proposalForm" class="proposal-form">
+        
+        <!-- Name -->
+        <div class="form-group">
+          <label class="form-label" for="applicantName">
+            <span>👤 Your Name / اسمك</span>
+            <span style="color: var(--color-danger);">*</span>
+          </label>
+          <input type="text" id="applicantName" class="brutalist-input" placeholder="اكتبي اسمك هنا..." required>
+        </div>
+
+        <!-- Handle -->
+        <div class="form-group">
+          <label class="form-label" for="applicantHandle">
+            <span>📱 Preferred Contact (Instagram or WhatsApp)</span>
+          </label>
+          <input type="text" id="applicantHandle" class="brutalist-input" placeholder="@instagram or Phone #...">
+        </div>
+
+        <!-- Meeting Goal / Proposal Type -->
+        <div class="form-group form-full">
+          <label class="form-label">
+            <span>🎯 Proposed Agenda / خطتنا سوا:</span>
+          </label>
+          <div class="pill-options-grid">
+            <label class="pill-option">
+              <input type="checkbox" name="goals" value="☕ قعدة ع القهوة مع شاي وشيشة قص وسجاير" checked>
+              <span>☕ Ahwa & Shisha Qass (شيشة وسجاير)</span>
+            </label>
+            <label class="pill-option">
+              <input type="checkbox" name="goals" value="🦅 نتفرج على ماتش الأهلي ونحتفل سوا">
+              <span>🦅 Watch Al Ahly Match (ماتش الأهلي)</span>
+            </label>
+            <label class="pill-option">
+              <input type="checkbox" name="goals" value="💨 ترصيلي حجر شيشة قص وترقصيلي 💃">
+              <span>💃 ترصيلي حجر شيشة قص وترقصيلي</span>
+            </label>
+            <label class="pill-option">
+              <input type="checkbox" name="goals" value="🎬 نتفرج على فيلم/مسلسل رايق سوا">
+              <span>🎬 Movie / Series Binge</span>
+            </label>
+            <label class="pill-option">
+              <input type="checkbox" name="goals" value="🎮 سهرة جيمنج ولعب وتحديات">
+              <span>🎮 Late-Night Gaming Session</span>
+            </label>
+            <label class="pill-option">
+              <input type="checkbox" name="goals" value="😴 نتنافس مين بينام أكتر">
+              <span>😴 Sleep Competition (مين ينام أكتر)</span>
+            </label>
+            <label class="pill-option">
+              <input type="checkbox" name="goals" value="🤍 نبدأ ريليشن جد وبدون لف ودوران">
+              <span>🤍 Real Relationship (بدون حوارات)</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Bad Jokes / Sarcasm Slider -->
+        <div class="form-group">
+          <label class="form-label">
+            <span>😂 Tolerance for "اااه طب تمام" & Sarcasm:</span>
+          </label>
+          <div class="slider-wrap">
+            <input type="range" id="jokeTolerance" min="10" max="100" value="85" class="brutalist-range">
+            <div style="display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 0.75rem; font-weight: 800;">
+              <span>10% (هتخانق معاك)</span>
+              <span>85% (فاهمة دماغك ورايقة)</span>
+              <span>100% (أنا أبرد منك وبقول تمام برضه)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Crucial Dealbreaker (Al Ahly, Shisha, Smoking & Cats) -->
+        <div class="form-group">
+          <label class="form-label" for="pizzaCrust">
+            <span>🦅 The Al Ahly, Shisha, Smoking & Cat Audit (الشروط والمواقف):</span>
+          </label>
+          <select id="pizzaCrust" class="brutalist-select">
+            <option value="Ahly Fan + Shisha Master + Smoker Friendly">أهلاوية صميمة + بعرف أرص شيشة قص وأرقص لك + متقبلة السجاير ومفيش قطط (مقبولة فوراً 👑)</option>
+            <option value="Willing to Learn & Neutral">مليش في الكورة بس هشجع الأهلي عشانك وهتعود ع السجاير</option>
+            <option value="Zamalek Fan or Hates Smoking">زملكاوية وبكره السجاير وعندي قطط (مرفوضة فوراً مع الأسف ❌)</option>
+          </select>
+        </div>
+
+        <!-- Pitch Message -->
+        <div class="form-group form-full">
+          <label class="form-label" for="applicantPitch">
+            <span>💌 Your Pitch / رسالة شخصية منك لـ Elnonn:</span>
+          </label>
+          <textarea id="applicantPitch" class="brutalist-textarea" rows="3" placeholder="كلمة حلوة منك أو رأيك في الموقع وسيرتي الذاتية..."></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="form-full" style="text-align: center; margin-top: 1rem;">
+          <button type="submit" class="brutalist-btn brutalist-btn-primary" style="font-size: 1.1rem; padding: 1rem 2.5rem;">
+            <span>🚀 SUBMIT OFFICIAL PROPOSAL (إرسال للنون)</span>
+          </button>
+          <div class="font-mono" style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.5rem;">
+            * All data is processed directly to Elnonn with 100% authenticity.
+          </div>
+        </div>
+
+      </form>
+    </div>
+
+  </main>
+
+  <!-- ==================== 11. FOOTER & SIGNOFF ==================== -->
+  <footer class="footer-dossier">
+    <div class="container footer-content">
+      <div>
+        <div class="ar handwriting" style="font-size: 1.6rem; font-weight: 700; color: #111;">
+          Thanks for your time... (وسامحيني على الإزعاج) ☕
+        </div>
+        <div class="font-mono" style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.35rem;">
+          P.S.: If you like bad jokes & coffee, we'll get along perfectly.
+        </div>
+      </div>
+
+      <div class="signature-box" style="text-align: right;">
+        <div class="signature-name">Elnonn // النون 👑</div>
+        <div class="font-mono" style="font-size: 0.85rem; font-weight: 800; color: var(--stamp-red);">
+          FUTURE BOYFRIEND? MAYBE...
+        </div>
+        <div style="font-family: var(--font-mono); font-size: 0.75rem; color: #888; margin-top: 0.2rem;">
+          EL MARG CITY • PROGRAMMER • ALL RIGHTS RESERVED © 2025
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== MODAL 1: EVIDENCE INSPECTOR ==================== -->
+  <div class="modal-overlay" id="evidenceModal">
+    <div class="modal-box">
+      <button class="modal-close-btn" id="closeModalBtn" aria-label="Close Modal">✕</button>
+      
+      <div style="display: flex; gap: 0.5rem; align-items: center; margin-bottom: 0.5rem;">
+        <span class="stamp stamp-danger" id="modalCaseTag">CASE EVIDENCE</span>
+        <span class="font-mono" id="modalCaseSub" style="font-size: 0.8rem; font-weight: 800;">CODE: 001</span>
+      </div>
+
+      <h3 id="modalCaseTitle" style="font-size: 1.6rem; font-weight: 900; margin-bottom: 1rem;">Case Title</h3>
+
+      <div id="modalImgContainer" style="border: 3px solid #000; overflow: hidden; max-height: 320px; background: #000; margin-bottom: 1rem;">
+        <img id="modalCaseImg" src="" alt="Evidence photo" style="width: 100%; height: 100%; object-fit: contain;">
+      </div>
+
+      <div class="ar" style="margin-bottom: 1rem;">
+        <div style="font-family: var(--font-mono); font-size: 0.8rem; font-weight: 800; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.25rem;">
+          📋 Incident Report & Details (تفاصيل الحالة):
+        </div>
+        <p id="modalCaseDesc" style="font-size: 1.05rem; font-weight: 700; line-height: 1.6;">
+          وصف الحالة يظهر هنا...
+        </p>
+      </div>
+
+      <div style="background: var(--color-yellow-bg); border: 2px dashed #000; padding: 0.75rem; font-family: var(--font-mono); font-size: 0.85rem;">
+        <strong>🗣️ Personal Commentary (تعليقي الشخصي):</strong>
+        <p id="modalCaseWitness" class="ar" style="margin-top: 0.25rem; font-weight: 700;">"..."</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== MODAL 2: APPLICATION RECEIPT & WHATSAPP BRIDGE ==================== -->
+  <div class="modal-overlay" id="receiptModal">
+    <div class="modal-box" style="text-align: center;">
+      <button class="modal-close-btn" id="closeReceiptBtn" aria-label="Close Receipt">✕</button>
+
+      <div style="font-size: 3rem; margin-bottom: 0.5rem;">🎉</div>
+      <span class="stamp stamp-danger" style="margin-bottom: 0.5rem;">PROPOSAL REGISTERED</span>
+      <h3 style="font-size: 1.8rem; font-weight: 900; margin-bottom: 0.5rem;">
+        PROPOSAL REGISTERED SUCCESSFULLY!
+      </h3>
+      <p class="ar" style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+        تم تسجيل طلبك يا فنانة بنجاح في سجلات الوكالة:
+      </p>
+
+      <div style="background: var(--bg-surface); border: 2px solid #000; padding: 1.25rem; text-align: left; font-family: var(--font-mono); font-size: 0.85rem; margin-bottom: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem;">
+        <div><strong>👤 CANDIDATE:</strong> <span id="receiptApplicantName">Name</span></div>
+        <div><strong>🎯 PROPOSED PLAN:</strong> <span id="receiptGoals">Goals</span></div>
+        <div><strong>😂 SARCASM TOLERANCE:</strong> <span id="receiptTolerance">85%</span></div>
+        <div><strong>🚫 CAT POLICY:</strong> <span id="receiptPizza">No Cats</span></div>
+        <div><strong>💬 PITCH:</strong> <span id="receiptPitch" style="color: var(--color-danger);">"..."</span></div>
+      </div>
+
+      <p class="ar" style="font-weight: 800; font-size: 1.05rem; margin-bottom: 1.25rem;">
+        عايزة تبعتي البروبوزال ده لـ Elnonn على الواتساب فوراً وتاخدي ميعاد شاي بنعناع؟ 😉
+      </p>
+
+      <div style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap;">
+        <button id="whatsappSendBtn" class="brutalist-btn brutalist-btn-green" style="font-size: 0.95rem; padding: 0.85rem 1.5rem;">
+          <span>💬 SEND DIRECTLY ON WHATSAPP (إرسال للنون)</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
